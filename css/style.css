@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.row {
+    font-size: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row [class*="hm-col-"],
+.row[class*="hm-column-"] .item{
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+.hm-col-12 {
+    width: 100%;
+}
+.hm-col-9 {
+    width: 75%;
+}
+.hm-col-3 {
+    width: 25%;
+}
+.hm-column-2 .item{
+    width: 50%
+}
+.va-m{
+    vertical-align: middle !important;
+}
+/* ===========01.Header========== */
+.my-picture{
+    border-radius: 50%;
+    position: relative;
+    display:block;
+}
+.my-picture::before{
+    content: " ";
+    display:block;
+    padding-top: 50%;
+}
+.my-picture img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.my-name{
+    text-align: center;
+}
+.my-name h1{
+    font-size: 80px
+}
+.my-name p{
+    font-size: 40px
+}
+.contact{
+    text-align: center;
+    margin-top: 20px;
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: #d0d0d0d0;
+}
+.contact p{
+    padding: 5px 0;
+}
+.contact i{
+    padding: 0 10px;
+}
+/* =============02.Main=========== */
+main{
+    overflow: hidden;
+}
+.side-bar{
+    padding-bottom: 10015px;
+    margin-bottom: -9999px;
+    border-right: 5px solid rgba(0, 0, 0, 0.7);
+    vertical-align: middle !important;
+}
+.side-bar *{
+    vertical-align: middle;
+}
+.side-bar h1{
+    margin-top: 20px
+}
+.side-bar p{
+    margin-top: 10px;
+}
+main .hm-col-9 > *{
+    padding: 30px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+}
+main .hm-col-9 > * h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+}
+main .hm-col-9 > * p{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+.hm-col-9 .project li{
+    text-align: center;
+    padding: 15px 0;
+}
+.hm-col-9 .project li a{
+    padding: 15px 10px;
+    font-size: 20px;
+    background-color: #d36b30;
+    color: #fff;
+    transition: all .3s ease;
+    font-weight: bold;
+}
+.project li a:hover{
+    background-color: rgba(211, 107, 48, 0.3);
+    color: #d36b30
+}
