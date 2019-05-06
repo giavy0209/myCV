@@ -82,6 +82,7 @@ a{
 }
 .contact p{
     padding: 5px 0;
+    display: inline;
 }
 .contact i{
     padding: 0 10px;
@@ -159,4 +160,33 @@ main .hm-col-9 > * p{
 }
 footer .English .img-2-1{
     bottom: 100px
+}
+@media only screen and (max-width: 1001px){
+    header .row .hm-col-9{
+        width: 100%
+    }
+    header .row .hm-col-3{
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+    header .row .my-name >*{
+        font-size: 32px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 760px){
+    .contact p{
+        display: block;
+    }
+    main .row [class*="hm-col-"]{
+        width: 100%
+    }
+    main .row .hm-col-3{
+        text-align: center;
+        border-right: none;
+        padding: 0 0 10px 0;
+        margin: 0;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+    }
 }
